@@ -39,9 +39,9 @@ def main():
     
     # --- System Preparation ---
     print("\n[+] Updating system packages and installing prerequisites...")
-    run_command("apt-get update")
-    run_command("apt-get upgrade -y")
-    run_command("apt-get install -y curl net-tools ufw")
+    run_command("sudo apt-get update")
+    run_command("sudo apt-get upgrade -y")
+    run_command("sudo apt-get install -y curl net-tools ufw")
 
     # --- Download and Install OpenVPN Access Server ---
     print("\n[+] Downloading and installing OpenVPN Access Server...")
